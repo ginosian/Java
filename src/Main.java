@@ -47,7 +47,7 @@ public class Main {
             System.out.println("The total is $" + total);
         }
         catch (IOException ioe){
-            System.out.println("I/O Exeption");
+            System.out.println("I/O Exception");
         }
         */
 
