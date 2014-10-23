@@ -1,6 +1,13 @@
 /**
  * Created by Martha on 22.10.14.
  */
+
+/**
+ * Variables, Data Types and Simple I/O
+ */
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 public class Main {
     public static void main(String args []){
         /** Math game
@@ -153,7 +160,7 @@ public class Main {
         int n1 = 4;
         int n2 = 11;
         String subString = string1.substring(n1, n2);
-        System.out.print("The replaced string1 " + " = " + replace);
+        System.out.print("The substring string1 " + " = " + subString);
         System.out.println();
         /**
          * String toLowerCase ()
@@ -176,6 +183,43 @@ public class Main {
         System.out.println("The value of Boolean " + " = " + String.valueOf(b));
         String testing = String.valueOf(a);
         System.out.println("ValueOf testing " + " = " + testing);
+
+        /**
+         * NameGame
+         * Demonstrates simple I/O and String Methods
+         */
+        String firstName = "";
+        String lastName = "";
+        String fullName;
+        String initials;
+        int numLetters;
+        System.out.println("What is your first name?");
+        BufferedReader reader = new BufferedReader (new InputStreamReader(System.in));
+        try {
+            firstName = reader.readLine();
+        }
+        catch(Exception ioe){
+            System.out.println("I/O Exception occurred");
+        }
+        System.out.println("Nice name " + firstName + " , I'll shot it " + firstName.toUpperCase() + "!");
+        System.out.println();
+        System.out.println("What is your last name?");
+        try{
+            lastName = reader.readLine();
+        }
+        catch (Exception ioe){
+            System.out.println("I/O Exception occurred");
+        }
+        fullName = firstName.concat(" ").concat(lastName);
+
+        System.out.println("So your full name is " + fullName + "!");
+
+
+
+
+
+
+
 
 
 
