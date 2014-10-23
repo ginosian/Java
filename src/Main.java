@@ -202,7 +202,6 @@ public class Main {
             System.out.println("I/O Exception occurred");
         }
         System.out.println("Nice name " + firstName + " , I'll shot it " + firstName.toUpperCase() + "!");
-        System.out.println();
         System.out.println("What is your last name?");
         try{
             lastName = reader.readLine();
@@ -213,13 +212,12 @@ public class Main {
         fullName = firstName.concat(" ").concat(lastName);
 
         System.out.println("So your full name is " + fullName + "!");
+        initials = firstName.charAt(0) + "." + lastName.charAt(0) + ".";
+        System.out.println("Your initials are " + initials + " !");
+        numLetters = firstName.length() + lastName.length();
+        System.out.println("There are " + numLetters + " letters in your full name");
 
-
-
-
-
-
-
+        System.out.println("The end of paragraph");
 
 
 
