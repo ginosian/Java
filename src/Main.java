@@ -217,6 +217,9 @@ public class Main {
         numLetters = firstName.length() + lastName.length();
         System.out.println("There are " + numLetters + " letters in your full name");
 
+
+
+
         System.out.println("The end of paragraph");
 
 
