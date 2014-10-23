@@ -61,9 +61,20 @@ public class Main {
             System.out.println("Hell " + args[i] + "!" );
         }
         */
-
-
-
+        String string1 = " Once upon a time ";
+        String string2 = " To be or not to be ";
+         /**
+             * char char.At (int index)
+         */
+        int index = 6;
+       char result = string1.charAt(index);
+        System.out.println("The string 1 contains \'\'" + string1 + "\'\'" );
+        System.out.println("The string 2 contains \'\'" + string2 + "\'\'" );
+        System.out.print("charAt" + "=" + result);
+        /**
+         * STring concat(String str)
+         */
+        String concat = string1.concat(string2);
 
 
     }
