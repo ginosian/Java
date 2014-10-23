@@ -66,12 +66,14 @@ public class Main {
         String string3 = "time ";
         String string4 = string1;
         String string5 = " once Upon a Time ";
+        String string6 = "be";
 
         System.out.println("The string 1 contains \'\'" + string1 + "\'\'" );
         System.out.println("The string 2 contains \'\'" + string2 + "\'\'" );
         System.out.println("The string 3 contains \'\'" + string3 + "\'\'" );
         System.out.println("The string 4 contains \'\'" + string4 + "\'\'" );
         System.out.println("The string 5 contains \'\'" + string5 + "\'\'" );
+        System.out.println("The string 6 contains \'\'" + string6 + "\'\'" );
 
 
          /**
@@ -118,5 +120,61 @@ public class Main {
         int iof2 = string1.indexOf(indexOf, index);
         System.out.print("index of " + indexOf + " starting from " + (iOf + 1) +  " position " + "= " + iof2);
         System.out.println();
+        /**
+         * int indexOf (String str)
+         */
+        int iof3 = string1.indexOf(string3);
+        System.out.print("index of " + string3 +  " is at position " + "= " + iof3);
+        System.out.println();
+        /**
+         * int indexOf (String str, int p)
+         */
+        int iOf5 = 6;
+        int iof4 = string2.indexOf(string6, iOf5);
+        System.out.print("index of " + string6 + " starting from " + (iOf5 + 1) +  " is at position " + "= " + iof4);
+        System.out.println();
+        /**
+         * int length ()
+         */
+        int lngth = string1.length();
+        System.out.print("The length of " + string1 + " = " + lngth);
+        System.out.println();
+        /**
+         * String replace (char c1, char c2)
+         */
+        char r1 = 'a';
+        char r2 = 'A';
+        String replace = string1.replace(r1, r2);
+        System.out.print("The replaced string1 " + " = " + replace);
+        System.out.println();
+        /**
+         * String substring (int n1, int n2)
+         */
+        int n1 = 4;
+        int n2 = 11;
+        String subString = string1.substring(n1, n2);
+        System.out.print("The replaced string1 " + " = " + replace);
+        System.out.println();
+        /**
+         * String toLowerCase ()
+         */
+        String lowerCase = string1.toLowerCase();
+        System.out.print("The lowerCased string1 " + " = " + lowerCase);
+        System.out.println();
+        /**
+         * String toUpperCase ()
+         */
+        String upperCase = string1.toUpperCase();
+        System.out.print("The upperCased string1 " + " = " + upperCase);
+        System.out.println();
+        /**
+         * String valueOf()
+         */
+        int a = 1;
+        int b = 2;
+        int c = 3;
+        int d = 4;
+
+
     }
 }
