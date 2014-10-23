@@ -217,6 +217,20 @@ public class Main {
         numLetters = firstName.length() + lastName.length();
         System.out.println("There are " + numLetters + " letters in your full name");
 
+/**
+ *Write an applicaston that calculates a 5% tax for any given price and displays the total cost
+ */
+        int price = 0;
+        int tax;
+        int total;
+        System.out.println("Enter the price");
+        try{
+            price = reader.readLine();
+        }
+        catch(Exception ioe){
+            System.out.println("I/O Exception occurred");
+        }
+
 
 
 
