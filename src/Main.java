@@ -64,10 +64,15 @@ public class Main {
         String string1 = " Once upon a time ";
         String string2 = " To be or not to be ";
         String string3 = "time ";
+        String string4 = string1;
+        String string5 = " once Upon a Time ";
 
         System.out.println("The string 1 contains \'\'" + string1 + "\'\'" );
         System.out.println("The string 2 contains \'\'" + string2 + "\'\'" );
         System.out.println("The string 3 contains \'\'" + string3 + "\'\'" );
+        System.out.println("The string 4 contains \'\'" + string4 + "\'\'" );
+        System.out.println("The string 5 contains \'\'" + string5 + "\'\'" );
+
 
          /**
              * char char.At (int index)
@@ -88,6 +93,30 @@ public class Main {
         Boolean endsWith = string1.endsWith(string3);
         System.out.print("endsWith " + "= " + endsWith);
         System.out.println();
-
+        /**
+         * Boolean equals (String str)
+         */
+        Boolean equals = string4.equals(string1);
+        System.out.print("equals " + "= " + equals);
+        System.out.println();
+        /**
+         * Boolean equalsIgnoreCase (String str)
+         */
+        Boolean equalsIgnoreCase = string1.equalsIgnoreCase(string5);
+        System.out.print("equalsIgnoreCase " + "= " + equalsIgnoreCase);
+        System.out.println();
+        /**
+         * int indexOf (char c)
+         */
+        char indexOf = 'e';
+        int iOf = string1.indexOf(indexOf);
+        System.out.print("indexOf " + indexOf + " " + "= " + iOf);
+        System.out.println();
+        /**
+         * int indexOf(char c, int p)
+         */
+        int iof2 = string1.indexOf(indexOf, index);
+        System.out.print("index of " + indexOf + " starting from " + (iOf + 1) +  " position " + "= " + iof2);
+        System.out.println();
     }
 }
