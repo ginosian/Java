@@ -70,11 +70,18 @@ public class Main {
        char result = string1.charAt(index);
         System.out.println("The string 1 contains \'\'" + string1 + "\'\'" );
         System.out.println("The string 2 contains \'\'" + string2 + "\'\'" );
-        System.out.print("charAt" + "=" + result);
+        System.out.print("charAt " + "= " + result);
+        System.out.println();
         /**
          * STring concat(String str)
          */
         String concat = string1.concat(string2);
+        System.out.print("concat " + "= " + concat);
+        System.out.println();
+        /**
+         * Boolean endsWith (String str)
+         */
+
 
 
     }
