@@ -170,10 +170,13 @@ public class Main {
         /**
          * String valueOf()
          */
-        int a = 1;
-        int b = 2;
-        int c = 3;
-        int d = 4;
+        double a = 569785.2654965;
+        Boolean b = false;
+        System.out.println("The value of double " + " = " + String.valueOf(a));
+        System.out.println("The value of Boolean " + " = " + String.valueOf(b));
+        String testing = String.valueOf(a);
+        System.out.println("ValueOf testing " + " = " + testing);
+
 
 
     }
