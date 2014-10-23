@@ -63,13 +63,17 @@ public class Main {
         */
         String string1 = " Once upon a time ";
         String string2 = " To be or not to be ";
+        String string3 = "time ";
+
+        System.out.println("The string 1 contains \'\'" + string1 + "\'\'" );
+        System.out.println("The string 2 contains \'\'" + string2 + "\'\'" );
+        System.out.println("The string 3 contains \'\'" + string3 + "\'\'" );
+
          /**
              * char char.At (int index)
          */
         int index = 6;
-       char result = string1.charAt(index);
-        System.out.println("The string 1 contains \'\'" + string1 + "\'\'" );
-        System.out.println("The string 2 contains \'\'" + string2 + "\'\'" );
+        char result = string1.charAt(index);
         System.out.print("charAt " + "= " + result);
         System.out.println();
         /**
@@ -81,8 +85,9 @@ public class Main {
         /**
          * Boolean endsWith (String str)
          */
-
-
+        Boolean endsWith = string1.endsWith(string3);
+        System.out.print("endsWith " + "= " + endsWith);
+        System.out.println();
 
     }
 }
