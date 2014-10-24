@@ -8,6 +8,8 @@
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.InputMismatchException;
+import java.util.Scanner;
 public class Main {
     public static void main(String args []){
         /** Math game
@@ -220,18 +222,27 @@ public class Main {
 /**
  *Write an applicaston that calculates a 5% tax for any given price and displays the total cost
  */
-        int price = 0;
-        int tax;
-        int total;
+        double price = 0;
+        double tax;
+        double total;
         System.out.println("Enter the price");
+        Scanner input = new Scanner (System.in);
         try{
-            price = reader.readLine();
+            price = input.nextDouble();
         }
-        catch(Exception ioe){
-            System.out.println("I/O Exception occurred");
+        catch(InputMismatchException ime){
+            System.out.println("Only doubles please");
         }
-
-
+        double percentage = 0.05;
+        tax = price*percentage;
+        total = price + tax;
+        System.out.println("Price is " + price + ",");
+        System.out.println("Tax is " + tax + ",");
+        System.out.println("Total is " + total + ",");
+//*********************************************************************************************************
+// Lyov tes vor input@ bacardzak tiv em grum aran cstoraketid heto tveri normal hashvuma, bayc vor
+//input@ amboxchov tiv e linum asenq 256.32 amboxch ardyunk@ zro e talis ayd tvum input@, inchi e etpec?
+//*********************************************************************************************************
 
 
         System.out.println("The end of paragraph");
