@@ -243,6 +243,54 @@ public class Main {
 // Lyov tes vor input@ bacardzak tiv em grum aran cstoraketid heto tveri normal hashvuma, bayc vor
 //input@ amboxchov tiv e linum asenq 256.32 amboxch ardyunk@ zro e talis ayd tvum input@, inchi e etpec?
 //*********************************************************************************************************
+        /**
+         * Write an application that prints multiplication table for integer 1 trough 12.
+         */
+        for (int i = 1; i<13; i++){
+            System.out.println("Multiplication tabel for " + (i));
+            for (int j = 1; j<13; j++){
+                System.out.println(j+ ". " + i + "*" + j + "=" + (i*j));
+            }
+        }
+
+        /**
+         *  Write an application that prints multiplication table for user input multiplying by 1 trough 12.
+         */
+        int userInput = 0;
+        System.out.println("Enter your integer");
+        try{
+            userInput = input.nextInt();
+        }
+        catch(InputMismatchException ime){
+            System.out.println("Only integers please");
+        }
+        System.out.println("Multiplication table for " + userInput);
+        for (int i = 1; i<13; i++){
+            System.out.println(i + ".   " + userInput + "*" + i + "=" + (userInput*i));
+        }
+        /**
+         * Write an application that reads in users sentence for unknown, possibly mixed upper and lower-case letters
+         * capitalaizes the first letter of sentence, make all othe letters lowercase and makes sure there is a
+         * period at the end.
+         */
+        String story = " ";
+        String empty = " ";
+        System.out.println("Enter your story");
+
+        try {
+            story = reader.readLine();
+        }
+        catch (Exception ioe){
+            System.out.println("I/O exception occurred");
+        }
+        String storyToLowerCase = story.toLowerCase();
+        if(storyToLowerCase.charAt(0) != empty.charAt(0)){
+           String storyMiddleStage = storyToLowerCase.substring(0, 0);
+           String storyFirstLetterUpperCase = storyMiddleStage.toUpperCase();
+
+
+        }
+
 
 
         System.out.println("The end of paragraph");
